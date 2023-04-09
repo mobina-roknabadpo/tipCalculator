@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Comfortaa:wght@300&family=PT+Sans:ital@1&family=Playfair+Display&family=Poiret+One&family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Comfortaa:wght@300&family=PT+Sans:ital@1&family=PT+Serif:ital@1&family=Playfair+Display&family=Poiret+One&family=Raleway:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+body {
+    background: conic-gradient(from -90deg at top left, black, white);
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+    font-family: 'Caveat', cursive;;
+}
+
+.calculator h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #555;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.calculator input {
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 5px 5px 5px 25px;
+
+}
+
+input, select {
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.calculator i {
+    position: absolute;
+    left: 6.4%;
+    margin-right: 10px;
+    color: #444;
+
+}
+
+.calculator .dollar {
+    top: 29%;
+}
+
+.calculator .male {
+    top: 49%;
+}
+
+#quality {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+button {
+    background-color: #fff;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 3px;
+    width: fit-content;
+    margin-top: 10px;
+    color: #555;
+}
+
+#tip-amount {
+    visibility: hidden;
+    text-align: center;
+    background: #ffffff;
+    color: #222;
+    min-width: 260px;
+    margin: auto;
+    bottom: 40px;
+    padding: 16px;
+    position: fixed;
+
+}
+
+#tip-amount.show {
+    visibility: visible;
+    -webkit-animation: fadein .5s, fadeout .5s 2.5s;
+    animation: fadein .5s, fadeout .5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0
+    }
+    to {
+        bottom: 40px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0
+    }
+    to {
+        bottom: 40px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 40px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 40px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .calculator i {
+        left: 9%;
+
+    }
+}
